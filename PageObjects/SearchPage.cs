@@ -16,6 +16,8 @@ namespace SpecflowUIAutomation.PageObjects
         {
             this.driver = driver;
         }
+
+        [Obsolete]
         public int Countdresses()
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
