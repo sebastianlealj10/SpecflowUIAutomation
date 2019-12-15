@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using SpecflowUIAutomation.PageObjects.MainPage;
+using SpecflowUIAutomation.PageObjects.SearchingPage;
 using System;
 using System.IO;
 namespace SpecflowUIAutomation.PageObjects
@@ -12,17 +14,17 @@ namespace SpecflowUIAutomation.PageObjects
         public IWebDriver _driver;
         public void Beforetest()
         {
-            _driver = new ChromeDriver(path + "\\Drivers");
+            _driver = new ChromeDriver(path + "\\drivers");
         }
         public HomePage HomePage()
         {
             return new HomePage(_driver);
         }
 
-        public SearchPage Searchpage()
-        {
-            return new SearchPage(_driver);
-        }
+        //public SearchPage Searchpage()
+        //{
+            //return new SearchPage(_driver,_wa);
+        //}
 
         public void Aftertest()
         {

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecflowUIAutomation.Features
+namespace SpecflowUIAutomation.Tests.Gherkin.Features
 {
     using TechTalk.SpecFlow;
     using System;
